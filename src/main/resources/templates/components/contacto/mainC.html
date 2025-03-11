@@ -1,0 +1,18 @@
+<main th:fragment="mainC" class="container my-5">
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form id="contact-form">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre" required>
+
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" placeholder="correo@ejemplo.com"
+            title="Introduce tu correo de @g.educaand.es" required>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" maxlength="500" placeholder="Tu mensaje"></textarea>
+           
+            <button class="enviar" type="submit">Enviar</button>
+        </form>
+    </section>
+</main>

@@ -1,0 +1,75 @@
+body,
+html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1,
+h2 {
+    margin: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: left;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+:root {
+  --background-color: #121212;
+  --main-color: #e3ed21;
+  --white-color: #ffffff;
+  --botton-color: #2b2bbb;
+
+  --big-font: 4rem;
+  --h2-font: 2rem;
+}
+
+#about {
+    padding: 100px 18.5px;
+    background: url('imagenes/fondooo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    color: #000000; 
+    width: 100%;
+}
+
+.habilidades h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.tabla {
+    margin: auto;
+}
+
+.tabla td {
+    padding: 25px;
+}
+
+.tabla img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.tabla img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.1);
+} 
+
+.tabla p {
+    font-weight: bold;
+    color: #333;
+}
