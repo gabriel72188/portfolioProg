@@ -108,3 +108,43 @@
     }
   }
   
+/* ======================*/
+/* ====== Footer ====== */
+/* ======================*/
+footer {
+  text-align: center;
+  padding: 10px 18.5px;
+  background: var(--background-color);
+  color: var(--white-color);
+  width: 100%;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+  margin-top: 10px;
+}
+
+.iconos {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.iconos:hover {
+  transform: scale(1.2);
+}
+/*=========================================*/
+
+/*=========================================*/
+/*HEADER*/
+:root {
+  --background-color: #121212;
+  --main-color: #e3ed21;
+  --white-color: #ffffff;
+  --botton-color: #2b2bbb;
+
+  --big-font: 4rem;
+  --h2-font: 2rem;
+}
