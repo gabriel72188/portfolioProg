@@ -1,5 +1,21 @@
+// Manejar la navegación en pantallas pequeñas
+function handleSmallScreens() {
+    document.querySelector('.navbar-toggler')
+        .addEventListener('click', () => {
+            let navbarMenu = document.querySelector('.navbar-menu');
+
+            if (!navbarMenu.classList.contains('active')) {
+                navbarMenu.classList.add('active');
+            } else {
+                navbarMenu.classList.remove('active');
+            }
+        });
+}
+
+handleSmallScreens();
+
 (function() {
-    emailjs.init("8-O8nP7hD09GGj7OZ"); // Reemplaza con tu user_id de EmailJS
+    emailjs.init("8-O8nP7hD09GGj7OZ");
 })();
 
 // Manejar el envío del formulario de contacto
