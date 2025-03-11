@@ -1,0 +1,40 @@
+<!-- encabezado -->
+<header>
+    <nav>
+        <div class="navbar-header">
+            <button class="navbar-toggler">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="navbar-menu">
+            <ul class="apartados">
+                <li><a href="/index">Inicio</a></li>
+                <li><a href="/habilidad">Sobre mí</a></li>
+                <li><a href="/proyectos">Proyectos</a></li>
+                <li><a href="/contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Manejar la navegación en pantallas pequeñas
+    function handleSmallScreens() {
+        document.querySelector('.navbar-toggler')
+            .addEventListener('click', () => {
+                let navbarMenu = document.querySelector('.navbar-menu');
+
+                if (!navbarMenu.classList.contains('active')) {
+                    navbarMenu.classList.add('active');
+                } else {
+                    navbarMenu.classList.remove('active');
+                }
+            });
+    }
+
+    handleSmallScreens();
+});
+</script>

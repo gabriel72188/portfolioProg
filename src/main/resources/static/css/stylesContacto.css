@@ -1,0 +1,75 @@
+body,
+html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1,
+h2 {
+    margin: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: left;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+:root {
+  --background-color: #121212;
+  --main-color: #e3ed21;
+  --white-color: #ffffff;
+  --botton-color: #2b2bbb;
+
+  --big-font: 4rem;
+  --h2-font: 2rem;
+}
+
+/* ======================*/
+/* ====== Contactos ====== */
+/* ======================*/
+#contact {
+    padding: 79px 18.5px;
+    background: linear-gradient(to right, #261c51, #121212);
+    color: var(--white-color);
+    width: 100%;
+    min-height: 70vh;
+}
+
+form {
+    max-width: 390px;
+    margin: auto;
+}
+
+input,
+select,
+textarea,
+form input,
+form textarea {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--white-color);
+    border-radius: 5px;
+}
+
+.enviar {
+    width: 100%;
+    padding: 10px;
+    background: var(--botton-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}

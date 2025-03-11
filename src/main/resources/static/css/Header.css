@@ -1,0 +1,110 @@
+
+:root {
+    --background-color: #121212;
+    --main-color: #e3ed21;
+    --white-color: #ffffff;
+    --botton-color: #2b2bbb;
+  
+    --big-font: 4rem;
+    --h2-font: 2rem;
+  }
+  
+  /* ======================*/
+  /* ====== Cabecera ====== */
+  /* ======================*/
+  header,
+  header > nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  @media (max-width: 768px) {
+    header,
+    header > nav {
+      display: block;
+    }
+  }
+  
+  header {
+    background-color: var(--background-color);
+    padding: 1rem 1.15rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-header {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+    }
+  }
+  .navbar-toggler {
+    border: none;
+    display: none;
+    outline: none;
+    background-color: var(--background-color);
+  }
+  @media (max-width: 768px) {
+    .navbar-toggler {
+      display: block;
+    }
+  }
+  .navbar-toggler span {
+    height: 2px;
+    width: 22px;
+    background-color: var(--white-color);
+    display: block;
+  }
+  .navbar-toggler span:not(:last-child) {
+    margin-bottom: 0.2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-menu {
+      display: none;
+      text-align: center;
+    }
+  }
+  .navbar-menu.active {
+    display: flex !important;
+  }
+  .apartados {
+    margin-left: auto;
+    flex-direction: row;
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    justify-content: center;
+    font-weight: bold;
+  }
+  @media (max-width: 768px) {
+    .apartados {
+      width: 100%;
+      display: block;
+      border-top: 1px solid var(--white-color);
+      margin-top: 1rem;
+    }
+  }
+  .apartados > li > a {
+    color: var(--white-color);
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+  }
+  .apartados > li > a:hover {
+    color: var(--botton-color);
+  }
+  @media (max-width: 768px) {
+    .apartados > li > a {
+      border-bottom: 1px solid var(--white-color);
+    }
+  }
+  

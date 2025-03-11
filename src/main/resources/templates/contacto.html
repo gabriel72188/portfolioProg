@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link href="/css/stylesContacto.css" rel="stylesheet" type="text/css">
+    <link href="/css/HeaderyFooter.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <div th:replace="~{components/global/header :: header(titulo='Contacto')}"></div>
+    </header>
+
+    <main>
+        <div th:replace="~{components/contacto/mainC :: mainC}"></div>
+    </main>
+
+    <footer>
+        <div th:replace="~{components/global/footer :: footer}"></div>
+    </footer>
+
+    <script src="/js/ScriptContacto.js"></script>
+</body>
+</html>

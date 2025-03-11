@@ -1,0 +1,86 @@
+body,
+html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1,
+h2 {
+    margin: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: left;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+:root {
+  --background-color: #121212;
+  --main-color: #e3ed21;
+  --white-color: #ffffff;
+  --botton-color: #2b2bbb;
+
+  --big-font: 4rem;
+  --h2-font: 2rem;
+}
+
+/* ======================*/
+/* ====== Proyectos ====== */
+/* ======================*/
+#projectos {
+    padding: 100px 18.5px;
+    background: linear-gradient(to right, #261c51, #121212);
+    color: var(--white-color);
+    overflow: hidden;
+    width: 100%;
+}
+
+.lista {
+    display: flex;
+    justify-content: space-around;
+    animation: scroll 16s linear infinite; 
+}
+
+.projecto {
+    text-align: center;
+    flex: 0 0 auto; 
+    margin: 0 130px; 
+}
+
+.projecto img {
+    border-radius: 3px;
+    width: 250px;
+    height: 240px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-173%);
+    }
+}
+
+@media (max-width: 768px) {
+  .texto {
+      text-align: center;
+      padding-left: 5px;
+  }
+  .projecto {
+      margin: 0 30px; 
+  }
+}
+
