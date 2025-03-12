@@ -20,6 +20,18 @@
     <main>
         <div th:replace="~{components/proyecto/mainP :: mainP}"></div>
     </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const lista = document.querySelector('.lista');
+            const proyectos = document.querySelectorAll('.projecto');
+    
+            // Duplicar los proyectos
+            proyectos.forEach(proyecto => {
+                const clon = proyecto.cloneNode(true);
+                lista.appendChild(clon);
+            });
+        });
+    </script>
 
     <footer>
         <div th:replace="~{components/global/footer :: footer}"></div>
