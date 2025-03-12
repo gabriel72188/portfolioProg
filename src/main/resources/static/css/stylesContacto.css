@@ -40,7 +40,7 @@ a {
 /* ====== Contactos ====== */
 /* ======================*/
 #contact {
-    padding: 79px 18.5px;
+    padding: 100px 18.5px;
     background: linear-gradient(to right, #261c51, #121212);
     color: var(--white-color);
     width: 100%;
