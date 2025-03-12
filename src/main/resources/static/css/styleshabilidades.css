@@ -38,7 +38,7 @@ a {
 
 #about {
     padding: 100px 18.5px;
-    background: url('imagenes/fondooo.jpg') no-repeat center center fixed;
+    background: url('/imagenes/fondooo.jpg') no-repeat center center fixed;
     background-size: cover;
     text-align: center;
     color: #000000; 
