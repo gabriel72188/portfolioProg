@@ -65,7 +65,7 @@ form textarea {
 }
 
 .enviar {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     background: var(--botton-color);
     color: var(--white-color);
